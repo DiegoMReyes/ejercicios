@@ -10,34 +10,32 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
-        <form method="POST">
+  <form method="GET">
         
-        <h2>Por Favor Ingrese Las Coeficientes </h2> <br>
-        <label> Variable b:  <input type='text' name='b' ></label><br>
-        <label> Variable a:  <input type='text' name='a' ></label><br>
-        <label> Variable c:  <input type='text' name='c' ></label><br>
+        <h2>Por favor ingrese las variables para realizar la operacion </h2> <br>
+          Variable a:  <input type='text' name='a' > <br>
+          Variable b:  <input type='text' name='b' ><br>
+         Variable c:  <input type='text' name='c' > <br>
         <input type='submit' name='enviar'>
-                </form>
+ </form>
         
         <?php
         
+        $bE = $_REQUEST['b'] * 2;
         
-        
-        $b1 = $_POST['b'] * 2;
-        
-        $a1 = $_POST['a'];
-        $a2 = $_POST['c'];
+        $a = $_REQUEST['a'];
+        $a2 = $_REQUEST['c'];
         $b2 = ($a1 * $a2);
         $b3 = 4 * $b2;
-      $y =  sqrt($b3);
+        $y =  sqrt($b3);
       
     
       
-        $b4= $b1 - $y;
+        $b4= $bE - $y;
         $b5 = $_POST['b'] + $b4;
         $b6 = $b5 / (2*$a1);
         echo "<br>";
-        echo "El Resultado de la ecuacion es: ". $b6;
+        echo "El resultado es  ... ". $b6;
         
         ?>
     </body>

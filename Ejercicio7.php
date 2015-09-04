@@ -23,11 +23,11 @@ if(isset($_REQUEST['enviar'])){
     
     
     $total = number_format($gasta, 0, '.', ''); 
-    
+ 
+   
     echo "Su vehiculo gastara  ".$total. " litros ";
     
     
 }
-
 
 ?>
