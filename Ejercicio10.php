@@ -51,6 +51,15 @@ if(isset($_REQUEST['enviar'])){
 		}
 
 	}
+	if( $mes == 2){
+
+		if($dia <= 28){
+
+			$aux++;
+
+		}
+
+	}
 
 
 	if($aux == 1){
