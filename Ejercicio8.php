@@ -1,16 +1,6 @@
-
-                 <form method='POST' > 
-        
-                 Ingrese las millas a convertir  : <input name = 'num' type='text'/> 
-                 
-                 <input name='en' type='submit' value='Enviar Numero' />
-                 
-                 
-                 </form>
+ <form method='POST' >   Ingrese las millas a convertir  : <input name = 'num' type='text'/>  <input name='en' type='submit' value='Enviar Numero' /></form>
 
 <?php
-
-
 function convertir($num){      
     $num2 = number_format($num, 3, '.', '');   
     return $num2;
@@ -42,18 +32,5 @@ if(isset($_REQUEST['en'])){
     
     echo "Hay en $millas millas: <br><br>";
     
-    echo "Kilometros ". $km2.  
-         "<br>Metros ".$metros2  .
-         "<br>Centimetros ".$cm2 .
-         "<br>Milimetros ".$mm2 .
-         "<br>Yardas ".$yarda2.
-         "<br>Pulgadas ".$pulgada2.
-         "<br>Pies ".$pie2
-            
-            ;
-    
-    
-
-}
-
-?>
+    echo "Kilometros ". $km2.   "<br>Metros ".$metros2  .  "<br>Centimetros ".$cm2 . "<br>Milimetros ".$mm2 .  "<br>Yardas ".$yarda2."<br>Pulgadas ".$pulgada2.
+    "<br>Pies ".$pie2 ;}   ?>

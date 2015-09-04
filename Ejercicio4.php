@@ -9,14 +9,15 @@
         
         <form method='POST'>
         
-        Ingrese un numero : <input name = 'numero' type='number' min='1' max ='9999' > 
+        Ingrese un numero : <input name = 'numero' 
+        type='number' min='1' max ='9999' > 
         
         <br> <input type='submit' value='Envie el numero'/>
         
          </form>
         
         <?php 
-          
+           
           
         if(isset($_REQUEST['numero'])){
     

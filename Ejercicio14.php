@@ -1,6 +1,8 @@
+<?php session_start(); ?>
 
 
-                 <form method='POST' > 
+
+                 <form action='Envio14.php' method='POST'  > 
         
                  Ingrese un numero : <input name = 'nume' type='text'/> 
                  

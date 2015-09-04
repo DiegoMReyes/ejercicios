@@ -1,44 +1,32 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title></title>
-    </head>
-    <body>
-        
-        
-        <form method="POST">
-            <h1> REALIZAR FACTURACION  </h1>
-            
-            <h2> Articulo: </h2>
-            
-        <label>Codigo: <input type="text" name="codigo" > </label>
-        <label>Nombre: <input type="text" name="nombre" > </label>
-        <label>Cantidad: <input type="text" name="cantidad" > </label>
-        <label>Precio: <input type="text" name="precio" > </label>
-        <br>
-        <input type="submit" name="acceder" > 
-        
-        
-        </form>
-        <?php
-        
-        session_start();
-        $x1= $_POST['codigo'];
-        $x2= $_POST['nombre'];
-        $x3= $_POST['cantidad'];
-        $x3= $_POST['precio'];
-        
-        $_SESSION['codigo'] = $x1;
-        
-        echo "su codigo es: ".$_SESSION['codigo'];
-        
-        ?>
-    </body>
-</html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio 1</title>
+</head>
+<body>
 
+
+
+
+
+	<form action="Envio13.php" method="POST">
+		Codigo Producto:<br><input type="text" name="codigo" id="codigo" value="0"><br/>
+		Cantidad de Litros:<br><input type="text" name="litros" id="litros" value="0"><br/>
+  		Precio Por Litros:<br><input type="text" name="precio" id="precio" value="0"><br/>
+  		<input type="submit" value="Enviar">
+	</form>
+
+
+
+
+	<?php if(!empty($_GET['velocidad'])){
+		echo  "La cantidad del recorrido es:".$_GET['velocidad'];		
+	} ?>
+
+
+
+
+</body>
+</html>
